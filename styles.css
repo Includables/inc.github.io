@@ -170,6 +170,12 @@ button:hover{
     label{
         font-size: 2vw;
     }
+	
+    input[type=text]{
+    width: 90%;
+    max-height: 40px;
+}
+
     
 
     input::placeholder{
