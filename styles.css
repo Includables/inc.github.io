@@ -57,13 +57,13 @@ a{
     background:#8B3DBB;
 	color:#fff;
     transition:all 0.3s ease;
+    padding-left: 18px;
 	padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.2vw;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    display: flex;
     text-align: center;
 }
 
@@ -72,9 +72,10 @@ a:hover{
 }
 
 .link{
-    width: 12%;
+    width: 16%;
     justify-content: center;
     text-align: center;
+    display: flex;
     margin-left: 44%;
 }
 
