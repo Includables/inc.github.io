@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(images/bg\ white.png);
+    background-image: url(Images/bg\ white.png);
     background-size: cover;
     background-repeat: repeat;
     background-color: #fff;
@@ -20,52 +20,28 @@ nav{
 }
 
 nav img{
-    max-height: 50px;
+    max-height: 45px;
     width: auto;
     margin-top: 2%;
     margin-left: 5%;
 }
 
-nav a{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border:none;
-    outline:none;
-    background:#8B3DBB;
-	color:#fff;
-    transition:all 0.3s ease;
-	padding:5px 50px;
-     border-radius: 5px;
-    margin-top: 2%;
-    margin-right: 5%;
-    font-size: 1vw;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-nav a:hover{
-    background-color: #ffa500;
-}
-
 h1{
-    /* margin-top: 5%; */
     color: #8B3DBB;
     font-size: 3vw;
     text-align: center;
-    margin: 1% 8% 1% 8%;
+    margin: 0% 8% 1% 8%;
 }
 
 h3{
     color: #747173;
-    font-size: 1vw;
+    font-size: 1.4vw;
     text-align: center;
     margin: 1% 8% 1% 8%;
 }
 
 img{
-    max-width: 40%;
+    max-width: 25%;
     height: auto;
     text-align: center;
 }
@@ -74,93 +50,45 @@ div .img{
     text-align: center;
 }
 
-.heroform{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-form{
-    width: 40%;
-   margin-left: 5%;
-   margin-top: 5%;
-}
-
-.row:nth-child(2){
-    margin-top: 4%;
-}
-
-label{
-    color: #8B3DBB;
-    font-size: 1vw;
-    font-weight: bold;
-    margin-right: 8%;
-}
-
-input[type=text]{
-    width: 90%;
-    max-height: 60px;
-    border:1px solid #747173;
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:none;
+    outline:none;
+    background:#8B3DBB;
+	color:#fff;
+    transition:all 0.3s ease;
+	padding: 10px 20px;
     border-radius: 5px;
-    padding: 10px;
-    /* margin: 5px; */
-}
-
-input::placeholder{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.8vw;
-}
-input[type=checkbox]{
-    margin-top: 5px;
-}
-
-.row{
-    display: flex;
-    align-items: center;
-}
-
-.row .inputgrp{
-    flex-basis: 48%;
-}
-
-.row:nth-child(2){
-    margin-top: 2%;
-}
-
-button{
-    width: 50%;
-    padding: 10px 25px;
-    background-color: #8B3DBB;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 20%;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
 }
 
-button:hover{
+a:hover{
     background-color: #ffa500;
 }
+
+.link{
+    width: 12%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 44%;
+}
+
 
 @media all and (orientation:portrait){
     nav img{
         width: 35%;
         height: auto;
     }
-
-    nav a{
-        padding:2px 20px 2px 20px;
-        border-radius: 5px;
-        font-size: 1.8vw;
-    }
        
     h1{
         color: #8B3DBB;
-        font-size: 5vw;
+        font-size: 5.5vw;
         text-align: center;
-        /* margin: 1% 8% 1% 8%; */
     }
 
     h1:first-child{
@@ -169,34 +97,25 @@ button:hover{
     
     h3{
         color: #747173;
-        font-size: 2vw;
+        font-size: 3vw;
         text-align: center;
-        margin: 1% 8% 1% 8%;
+        margin: 8% 8% 3% 8%;
     }
     
     img{
         max-width: 80%;
-	margin-top: 5%;
+        margin-top: 5%;
     }
     
-    form{
-        width: 70%;
-       margin-left: 5%;
-       margin-top: 5%;
-    }
-    
-    label{
-        font-size: 2vw;
-    }
-    
-
-    input::placeholder{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.5vw;
+    .link{
+        width: 32%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 35%;
     }
 
-    button{
-        font-size: 1.5vw;
+    a{
+        font-size: 2.8vw;
     }
  
 }
