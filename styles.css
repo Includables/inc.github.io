@@ -40,17 +40,39 @@ h3{
     margin: 1% 8% 1% 8%;
 }
 
-img{
-    max-width: 21%;
-    height: auto;
-    text-align: center;
-}
-
 div .img{
     text-align: center;
 }
 
-a{
+.img img{
+    max-width: 23%;
+    height: auto;
+    text-align: center;
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    50%{
+        transform: translateY(15px);
+    }
+}
+
+.img #shadow{
+    width: 200px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(3px);
+    animation: shrink 3s ease-out infinite;
+}
+
+@keyframes shrink {
+    0%{width: 50%;}
+    50%{width: 30%;}
+    100%{width: 50%;}    
+}
+
+.link a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border:none;
     outline:none;
@@ -67,7 +89,7 @@ a{
     text-align: center;
 }
 
-a:hover{
+.link a:hover{
     background-color: #ffa500;
 }
 
@@ -77,6 +99,41 @@ a:hover{
     text-align: center;
     display: flex;
     margin-left: 42%;
+}
+
+p{
+    font-size: 0.8vw;
+    margin-bottom: 10%;
+    color: #fff;
+}
+
+.handles{
+    position: absolute;
+    background-color: #8B3DBB;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 0.5%;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    top: 55%;
+    left: 5%;
+}
+
+.handles a img{
+    cursor: pointer;
+    margin-bottom: 15%;
+    width: 25%;
+    height: auto;
+}
+
+.handles_mobile{
+   display: none;
+}
+
+span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8vw;
 }
 
 
@@ -103,7 +160,7 @@ a:hover{
         margin: 8% 8% 3% 8%;
     }
     
-    img{
+    .img img{
         max-width: 80%;
         margin-top: 5%;
     }
@@ -118,5 +175,33 @@ a:hover{
     a{
         font-size: 2.8vw;
     }
- 
+
+    .handles{
+       display: none;
+    }
+    
+    .handles_mobile{
+        display: inline-block;
+        margin-left: 5%;
+        font-weight: 600;
+        width: 200px;
+     }
+
+     .handles_mobile a img{
+        width: 10%;
+        height: auto;
+        margin-right: 3%;
+     }
+
+     .handles_mobile p{
+        font-size: 2vw;
+        color: #747173;
+        margin-bottom: 2%;
+     }
+
+     .handles_mobile span{
+        color: #747173;
+        font-size: 3vw;
+     }
+
 }
