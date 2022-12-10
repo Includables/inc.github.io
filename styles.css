@@ -171,14 +171,14 @@ span{
     }
     
     .link{
-        width: 32%;
+        width: 36%;
         justify-content: center;
         text-align: center;
-        margin-left: 35%;
+        margin-left: 32%;
     }
 
-    a{
-        font-size: 2.8vw;
+    .link a{
+        font-size: 3vw;
     }
 
     .handles{
